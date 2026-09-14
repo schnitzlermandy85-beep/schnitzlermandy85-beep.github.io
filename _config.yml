@@ -1,0 +1,9 @@
+title: 沐山雨薇的小院
+description: 记录代码、想法与日常
+url: https://schnitzlermandy85-beep.github.io
+baseurl: ""
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: /posts/:year/:month/:day/:title/
+future: false
+exclude: [README.md]

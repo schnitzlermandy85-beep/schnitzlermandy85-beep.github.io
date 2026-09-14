@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<main class="reading"><a class="back" href="/">← 返回记录</a><article><p class="eyebrow">{{ page.kind | default: 'article' | upcase }} / {{ page.date | date: '%Y/%m/%d' }}</p><h1>{{ page.title | escape }}</h1><p class="byline">沐山雨薇</p><div class="article-body">{{ content }}</div></article><p style="margin-top:40px"><a class="read-link" href="https://github.com/schnitzlermandy85-beep/schnitzlermandy85-beep.github.io/edit/main/{{ page.path }}">编辑这篇记录 ↗</a></p></main>
