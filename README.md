@@ -27,3 +27,18 @@ Markdown 支持标题、列表、链接、代码块和照片。日期不要设�
 
 首页：index.html；配色：assets/style.css；导航：_layouts/default.html；文章布局：_layouts/post.html。
 本站使用 GitHub Pages 内置 Jekyll 构建，main 分支根目录发布，无需额外工作流或服务器。
+
+## 交互园林首页
+
+园林模型由 `assets/garden.js` 使用 Three.js 0.180.0 程序化生成，资源随站点托管，不依赖运行时 CDN。`assets/garden.css` 为首页新增样式，原玻璃卡片样式保留。
+
+- 书房 → 文章筛选；拱桥 → 个人 GitHub；八角亭 → 项目区；假山瀑布 → 照片筛选。
+- 拖动旋转、滚轮/双指缩放，支持归位、自动环游、暂停动画和放大。
+- 水面与瀑布着色器、风动植物、跑动人物和锦鲤；瓦片/树叶/石块使用实例化渲染。
+- 页面不可见或园林滚出视口时暂停渲染；遵循系统减少动态效果设置。
+- WebGL 不可用时保留静态背景和四个可访问链接。
+
+建模为原创实时风格化模型，根据园林参考图搭建，并非该参考图的离线写实模型。技术参考：
+- https://github.com/mrdoob/three.js/blob/dev/examples/webgl_shaders_ocean.html
+- https://github.com/mrdoob/three.js/issues/10036
+- Three.js 与 OrbitControls：MIT，见 `assets/vendor/THREE-LICENSE.txt`。
