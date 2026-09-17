@@ -42,3 +42,7 @@ Markdown 支持标题、列表、链接、代码块和照片。日期不要设�
 - https://github.com/mrdoob/three.js/blob/dev/examples/webgl_shaders_ocean.html
 - https://github.com/mrdoob/three.js/issues/10036
 - Three.js 与 OrbitControls：MIT，见 `assets/vendor/THREE-LICENSE.txt`。
+
+### 园林模型维护
+
+`assets/models/limestone-*.bin` 是本站生成的带孔洞石灰岩网格，包含顶点、法线、颜色和索引。池水采用本地 Three.js Water 模块进行平面反射，叶片和瓦片采用实例化渲染。Three.js 及 Water 模块遵循 `assets/vendor/THREE-LICENSE.txt`。
